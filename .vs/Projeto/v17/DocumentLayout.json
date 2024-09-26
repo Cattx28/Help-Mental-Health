@@ -1,0 +1,280 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Cat\\Desktop\\Projeto\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|C:\\Users\\Cat\\Desktop\\Projeto\\login\\frmdenuncias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmdenuncias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\view.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\view.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmpsicologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmpsicologo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|C:\\Users\\Cat\\Desktop\\Projeto\\login\\frmmoderador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmmoderador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|C:\\Users\\Cat\\Desktop\\Projeto\\login\\frminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|C:\\Users\\Cat\\Desktop\\Projeto\\login\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|C:\\Users\\Cat\\Desktop\\Projeto\\login\\frmbusca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmbusca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frminicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|C:\\Users\\Cat\\Desktop\\Projeto\\login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmmoderador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmmoderador.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmpsicologo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmpsicologo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmdenuncias.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmdenuncias.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|c:\\users\\cat\\desktop\\projeto\\login\\frmloading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3629311E-5476-48E1-9505-D3301AA51D57}|Login\\View.csproj|solutionrelative:login\\frmloading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmLoading.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmLoading.cs",
+              "RelativeDocumentMoniker": "Login\\FrmLoading.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmLoading.cs",
+              "RelativeToolTip": "Login\\FrmLoading.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T18:04:46.426Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmModerador.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmModerador.cs",
+              "RelativeDocumentMoniker": "Login\\FrmModerador.cs",
+              "ToolTip": "C:\\Users\\Cat\\source\\repos\\Projeto\\Login\\FrmModerador.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\source\\repos\\Projeto\\Login\\FrmModerador.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:38:31.551Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "View",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\View.csproj",
+              "RelativeDocumentMoniker": "Login\\View.csproj",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\View.csproj",
+              "RelativeToolTip": "Login\\View.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-26T23:25:46.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmDenuncias.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmDenuncias.cs",
+              "RelativeDocumentMoniker": "Login\\FrmDenuncias.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmDenuncias.cs [Projeto]",
+              "RelativeToolTip": "Login\\FrmDenuncias.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:30:12.528Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmPsicologo.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmPsicologo.cs",
+              "RelativeDocumentMoniker": "Login\\FrmPsicologo.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmPsicologo.cs [Projeto]",
+              "RelativeToolTip": "Login\\FrmPsicologo.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:33:03.189Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmInicial.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmInicial.cs",
+              "RelativeDocumentMoniker": "Login\\FrmInicial.cs",
+              "ToolTip": "C:\\Users\\Cat\\source\\repos\\Projeto\\Login\\FrmInicial.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\source\\repos\\Projeto\\Login\\FrmInicial.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:17:34.053Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmUsuarios.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Login\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\Cat\\source\\repos\\Projeto\\Login\\FrmUsuarios.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\source\\repos\\Projeto\\Login\\FrmUsuarios.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:23:24.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmUsuarios.cs",
+              "RelativeDocumentMoniker": "Login\\FrmUsuarios.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmUsuarios.cs",
+              "RelativeToolTip": "Login\\FrmUsuarios.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T21:42:15.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmBusca.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmBusca.cs",
+              "RelativeDocumentMoniker": "Login\\FrmBusca.cs",
+              "ToolTip": "C:\\Users\\Cat\\source\\repos\\Projeto\\Login\\FrmBusca.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\source\\repos\\Projeto\\Login\\FrmBusca.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:40:39.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmInicial.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmInicial.cs",
+              "RelativeDocumentMoniker": "Login\\FrmInicial.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmInicial.cs",
+              "RelativeToolTip": "Login\\FrmInicial.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwDsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T21:55:44.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmLogin.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "Login\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\Cat\\source\\repos\\Projeto\\Login\\FrmLogin.cs [Projeto]",
+              "RelativeToolTip": "..\\..\\source\\repos\\Projeto\\Login\\FrmLogin.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:10:27.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmPsicologo.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmPsicologo.Designer.cs",
+              "RelativeDocumentMoniker": "Login\\FrmPsicologo.Designer.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmPsicologo.Designer.cs",
+              "RelativeToolTip": "Login\\FrmPsicologo.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:33:07.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmModerador.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmModerador.Designer.cs",
+              "RelativeDocumentMoniker": "Login\\FrmModerador.Designer.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmModerador.Designer.cs",
+              "RelativeToolTip": "Login\\FrmModerador.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:39:09.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmDenuncias.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmDenuncias.Designer.cs",
+              "RelativeDocumentMoniker": "Login\\FrmDenuncias.Designer.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmDenuncias.Designer.cs",
+              "RelativeToolTip": "Login\\FrmDenuncias.Designer.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAYwJUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:30:46.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmUsuarios.Designer.cs",
+              "RelativeDocumentMoniker": "Login\\FrmUsuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\FrmUsuarios.Designer.cs",
+              "RelativeToolTip": "Login\\FrmUsuarios.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAEB5wBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T16:26:55.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\Program.cs",
+              "RelativeDocumentMoniker": "Login\\Program.cs",
+              "ToolTip": "C:\\Users\\Cat\\Desktop\\Projeto\\Login\\Program.cs",
+              "RelativeToolTip": "Login\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T20:16:06.479Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
