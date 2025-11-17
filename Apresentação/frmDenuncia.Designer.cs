@@ -34,12 +34,10 @@
             DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDenuncia));
             dgDenuncia = new DataGridView();
-            btnExcluir = new Button();
             btnMensagem = new Button();
             btnRespostas = new Button();
             btnBuscar = new Button();
             txtId = new TextBox();
-            btnPostagens = new Button();
             ((System.ComponentModel.ISupportInitialize)dgDenuncia).BeginInit();
             SuspendLayout();
             // 
@@ -85,102 +83,72 @@
             dgDenuncia.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             dgDenuncia.RowHeadersVisible = false;
             dgDenuncia.RowHeadersWidth = 51;
-            dgDenuncia.Size = new Size(998, 423);
+            dgDenuncia.Size = new Size(1035, 691);
             dgDenuncia.TabIndex = 0;
             dgDenuncia.SelectionChanged += dgDenuncia_SelectionChanged;
             // 
-            // btnExcluir
-            // 
-            btnExcluir.BackColor = Color.FromArgb(108, 138, 182);
-            btnExcluir.FlatStyle = FlatStyle.Popup;
-            btnExcluir.Font = new Font("Segoe UI Semilight", 12F);
-            btnExcluir.ForeColor = Color.FromArgb(226, 239, 239);
-            btnExcluir.Location = new Point(33, 535);
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(264, 40);
-            btnExcluir.TabIndex = 7;
-            btnExcluir.Text = "EXCLUIR MENSAGEM";
-            btnExcluir.UseVisualStyleBackColor = false;
-            btnExcluir.Click += btnExcluir_Click;
-            // 
             // btnMensagem
             // 
-            btnMensagem.BackColor = Color.FromArgb(108, 138, 182);
+            btnMensagem.BackColor = Color.FromArgb(19, 62, 112);
             btnMensagem.FlatStyle = FlatStyle.Popup;
             btnMensagem.Font = new Font("Segoe UI Semilight", 12F);
             btnMensagem.ForeColor = Color.FromArgb(226, 239, 239);
-            btnMensagem.Location = new Point(33, 24);
+            btnMensagem.Location = new Point(33, 34);
             btnMensagem.Name = "btnMensagem";
-            btnMensagem.Size = new Size(184, 40);
+            btnMensagem.Size = new Size(470, 40);
             btnMensagem.TabIndex = 1;
-            btnMensagem.Text = "MENSAGENS";
+            btnMensagem.Text = "Denúncias de Usuário";
             btnMensagem.UseVisualStyleBackColor = false;
             btnMensagem.Click += btnMensagem_Click;
             // 
             // btnRespostas
             // 
-            btnRespostas.BackColor = Color.FromArgb(108, 138, 182);
+            btnRespostas.BackColor = Color.FromArgb(19, 62, 112);
             btnRespostas.FlatStyle = FlatStyle.Popup;
             btnRespostas.Font = new Font("Segoe UI Semilight", 12F);
             btnRespostas.ForeColor = Color.FromArgb(226, 239, 239);
-            btnRespostas.Location = new Point(247, 24);
+            btnRespostas.Location = new Point(513, 34);
             btnRespostas.Name = "btnRespostas";
-            btnRespostas.Size = new Size(184, 40);
+            btnRespostas.Size = new Size(470, 40);
             btnRespostas.TabIndex = 2;
-            btnRespostas.Text = "RESPOSTAS";
+            btnRespostas.Text = "Denúncias de Psicológo";
             btnRespostas.UseVisualStyleBackColor = false;
             btnRespostas.Click += btnRespostas_Click;
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = Color.FromArgb(108, 138, 182);
+            btnBuscar.BackColor = Color.FromArgb(19, 62, 112);
             btnBuscar.BackgroundImageLayout = ImageLayout.Center;
             btnBuscar.FlatStyle = FlatStyle.Popup;
             btnBuscar.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBuscar.ForeColor = Color.FromArgb(226, 239, 239);
             btnBuscar.Image = (Image)resources.GetObject("btnBuscar.Image");
-            btnBuscar.Location = new Point(936, 24);
+            btnBuscar.Location = new Point(997, 24);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(83, 40);
+            btnBuscar.Size = new Size(71, 50);
             btnBuscar.TabIndex = 4;
             btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
             // 
             // txtId
             // 
-            txtId.Location = new Point(750, 52);
+            txtId.Location = new Point(852, 24);
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
             txtId.Size = new Size(125, 27);
             txtId.TabIndex = 13;
             txtId.Visible = false;
             // 
-            // btnPostagens
-            // 
-            btnPostagens.BackColor = Color.FromArgb(108, 138, 182);
-            btnPostagens.FlatStyle = FlatStyle.Popup;
-            btnPostagens.Font = new Font("Segoe UI Semilight", 12F);
-            btnPostagens.ForeColor = Color.FromArgb(226, 239, 239);
-            btnPostagens.Location = new Point(454, 24);
-            btnPostagens.Name = "btnPostagens";
-            btnPostagens.Size = new Size(184, 40);
-            btnPostagens.TabIndex = 3;
-            btnPostagens.Text = "POSTAGENS";
-            btnPostagens.UseVisualStyleBackColor = false;
-            btnPostagens.Click += btnPostagens_Click;
-            // 
             // frmDenuncia
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(208, 226, 241);
-            ClientSize = new Size(1090, 700);
-            Controls.Add(btnPostagens);
+            ClientSize = new Size(1090, 800);
             Controls.Add(txtId);
             Controls.Add(btnBuscar);
             Controls.Add(btnRespostas);
             Controls.Add(btnMensagem);
-            Controls.Add(btnExcluir);
             Controls.Add(dgDenuncia);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmDenuncia";
@@ -194,11 +162,9 @@
         #endregion
 
         private DataGridView dgDenuncia;
-        private Button btnExcluir;
         private Button btnMensagem;
         private Button btnRespostas;
         private Button btnBuscar;
         private TextBox txtId;
-        private Button btnPostagens;
     }
 }

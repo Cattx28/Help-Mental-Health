@@ -20,7 +20,7 @@ namespace Dados
 
                 Conexao.getConnection();
 
-                string insertSql = "INSERT INTO Usuario " +
+                string insertSql = "INSERT INTO usuario " +
                                     "(nome, idade, email, senha) " +
                                     "VALUES (@pNome, @pIdade, @pEmail )";
 
@@ -51,7 +51,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string updateSql = "UPDATE Usuario SET " +
+                string updateSql = "UPDATE usuario SET " +
                                     "nome = @pNome, faixaEtaria = @pIdade, email = @pEmail, " +
                                     "WHERE idUsuario = @pId";
 
@@ -83,7 +83,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string inativeSql = "UPDATE Usuario SET " +
+                string inativeSql = "UPDATE usuario SET " +
                                     "ativo = 0 " +
                                     "WHERE idUsuario = @pId";
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(inativeSql, Conexao.SqlCon);
@@ -110,7 +110,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string deleteSql = "DELETE FROM Usuario " +
+                string deleteSql = "DELETE FROM usuario " +
                                     "WHERE idUsuario = @pId ";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(deleteSql, Conexao.SqlCon);
@@ -136,7 +136,7 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * from Usuario " +
+                String selectSql = "SELECT * from usuario " +
                                     "WHERE ativo = 1";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -164,12 +164,12 @@ namespace Dados
                 Conexao.getConnection();
                 if (pId != null)
                 {
-                    selectSql = "SELECT * FROM Usuario "+
+                    selectSql = "SELECT * FROM usuario "+
                                 "WHERE idUsuario = @pId";
                 }
                 else
                 {
-                    selectSql = "SELECT * FROM Usuario";
+                    selectSql = "SELECT * FROM usuario";
                 }
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -197,7 +197,7 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * from Usuario " +
+                String selectSql = "SELECT * from usuario " +
                                     "WHERE ativo = 0";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);

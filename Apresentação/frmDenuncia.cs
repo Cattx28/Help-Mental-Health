@@ -19,7 +19,7 @@ namespace Apresentação
         {
             InitializeComponent();
             _denunciaService = new DenunciaService();
-            dgDenuncia.ColumnCount = 5;
+            dgDenuncia.ColumnCount = 4;
             parentForm = parent;
         }
 
@@ -32,20 +32,17 @@ namespace Apresentação
             // Configuração do DataGridView em um método separado
             dgDenuncia.AutoGenerateColumns = false;
             dgDenuncia.Columns[0].Width = 75;
-            dgDenuncia.Columns[0].HeaderText = "ID";
-            dgDenuncia.Columns[0].DataPropertyName = "idDenuncia_Mensagem";
+            dgDenuncia.Columns[0].HeaderText = "Id";
+            dgDenuncia.Columns[0].DataPropertyName = "idConversaDefinitiva";
             dgDenuncia.Columns[1].Width = 300;
-            dgDenuncia.Columns[1].HeaderText = "MOTIVO";
-            dgDenuncia.Columns[1].DataPropertyName = "motivo";
+            dgDenuncia.Columns[1].HeaderText = "Usuário";
+            dgDenuncia.Columns[1].DataPropertyName = "usuario";
             dgDenuncia.Columns[2].Width = 75;
-            dgDenuncia.Columns[2].HeaderText = "ID MENSAGEM";
-            dgDenuncia.Columns[2].DataPropertyName = "mensagem";
+            dgDenuncia.Columns[2].HeaderText = "Psicólogo";
+            dgDenuncia.Columns[2].DataPropertyName = "psicologo";
             dgDenuncia.Columns[3].Width = 170;
-            dgDenuncia.Columns[3].HeaderText = "CONTEÚDO";
-            dgDenuncia.Columns[3].DataPropertyName = "conteudoMensagem";
-            dgDenuncia.Columns[4].Width = 75;
-            dgDenuncia.Columns[4].HeaderText = "ID USUÁRIO";
-            dgDenuncia.Columns[4].DataPropertyName = "usuario";
+            dgDenuncia.Columns[3].HeaderText = "Denuncia";
+            dgDenuncia.Columns[3].DataPropertyName = "denuncia_do_usuario";
 
             dgDenuncia.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgDenuncia.AllowUserToAddRows = false;
@@ -58,20 +55,17 @@ namespace Apresentação
         {
             dgDenuncia.AutoGenerateColumns = false;
             dgDenuncia.Columns[0].Width = 75;
-            dgDenuncia.Columns[0].HeaderText = "ID";
-            dgDenuncia.Columns[0].DataPropertyName = "idDenuncia_Resposta";
+            dgDenuncia.Columns[0].HeaderText = "Id";
+            dgDenuncia.Columns[0].DataPropertyName = "idConversaDefinitiva";
             dgDenuncia.Columns[1].Width = 300;
-            dgDenuncia.Columns[1].HeaderText = "MOTIVO";
-            dgDenuncia.Columns[1].DataPropertyName = "motivo";
+            dgDenuncia.Columns[1].HeaderText = "Usuário";
+            dgDenuncia.Columns[1].DataPropertyName = "usuario";
             dgDenuncia.Columns[2].Width = 75;
-            dgDenuncia.Columns[2].HeaderText = "ID RESPOSTA";
-            dgDenuncia.Columns[2].DataPropertyName = "resposta";
+            dgDenuncia.Columns[2].HeaderText = "Psicólogo";
+            dgDenuncia.Columns[2].DataPropertyName = "psicologo";
             dgDenuncia.Columns[3].Width = 170;
-            dgDenuncia.Columns[3].HeaderText = "CONTEÚDO";
-            dgDenuncia.Columns[3].DataPropertyName = "conteudoResposta";
-            dgDenuncia.Columns[4].Width = 75;
-            dgDenuncia.Columns[4].HeaderText = "ID PSICOLOGO";
-            dgDenuncia.Columns[4].DataPropertyName = "psicologo";
+            dgDenuncia.Columns[3].HeaderText = "Denúncia";
+            dgDenuncia.Columns[3].DataPropertyName = "denuncia_do_psicologo";
 
         }
 

@@ -24,6 +24,9 @@ namespace Apresentação
 
         private frmInicial parentForm;
 
+        //Log
+        int idModerador = (int)UsuarioLogado.Id;
+
         public frmModerador(frmInicial parent)
         {
             InitializeComponent();
@@ -71,7 +74,7 @@ namespace Apresentação
             // Configuração do DataGridView em um método separado
             dgModerador.ColumnCount = 4;
             dgModerador.AutoGenerateColumns = false;
-            dgModerador.Columns[0].Width = 75;
+            dgModerador.Columns[0].Width = 60;
             dgModerador.Columns[0].HeaderText = "ID";
             dgModerador.Columns[0].DataPropertyName = "idModerador";
             dgModerador.Columns[1].Width = 300;
@@ -80,7 +83,7 @@ namespace Apresentação
             dgModerador.Columns[2].Width = 325;
             dgModerador.Columns[2].HeaderText = "EMAIL";
             dgModerador.Columns[2].DataPropertyName = "email";
-            dgModerador.Columns[3].Width = 170;
+            dgModerador.Columns[3].Width = 220;
             dgModerador.Columns[3].HeaderText = "SENHA";
             dgModerador.Columns[3].DataPropertyName = "senha";
 
@@ -205,7 +208,6 @@ namespace Apresentação
             string senha;
 
             string resultado;
-            //string resultado2;
             string msg;
 
             Moderador moderador = new Moderador();
@@ -223,12 +225,6 @@ namespace Apresentação
             moderador.nome = nome;
             moderador.email = email;
             moderador.senha = senhaHash;
-
-            //Log
-            int idModerador;
-            idModerador = (int)UsuarioLogado.Id;
-
-            
 
             //Validator
             if (moderador != null)
@@ -250,7 +246,7 @@ namespace Apresentação
             
             if (modo == 1)
             {
-                resultado = _moderadorService.Insert(null, nome, email, senhaHash);
+                resultado = _moderadorService.Insert(nome, email, senhaHash);
 
                 if (resultado == "SUCESSO")
                 {
@@ -262,7 +258,7 @@ namespace Apresentação
                        "Acesse seu perfil com nome de login (" + nome + ") ou email (" + email + ") e senha (" + senha + ").\n" +
                        "Mude a senha nas configurações para maior segurança!");
 
-                    _logsService.CriarLog(null, idModerador, "Novo Cadastro MODERADOR", "Email cadastrado: " + email);
+                    _logsService.CriarLog(null, idModerador, "Novo Cadastro MODERADOR", null, "Email cadastrado: " + email);
                 }
                 else
                 {
@@ -286,7 +282,7 @@ namespace Apresentação
 
                     EnviarEmail(email,"Atualização de conta Moderador HelpMentalHealth", body);
 
-                    _logsService.CriarLog(null, idModerador, "Atualização MODERADOR", "Id: " + id + "\n Motivo(s): " + motivo.Motivo);
+                   _logsService.CriarLog(null, idModerador, "Atualização MODERADOR", id, motivo.Motivo);
                 }
                 else
                 {
@@ -304,8 +300,6 @@ namespace Apresentação
             string resultado;
             string msg;
 
-            int idModerador = (int)UsuarioLogado.Id;
-
             DialogResult resposta;
             resposta = MessageBox.Show("Confirma exclusão?", "Aviso do sistema!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
@@ -320,7 +314,7 @@ namespace Apresentação
 
                 int.TryParse(txtId.Text, out int id);
 
-                _logsService.CriarLog(null, idModerador, "Exclusão MODERADOR", "Id: " + id + "\n Motivo(s): " + motivo.Motivo);
+                _logsService.CriarLog(null, idModerador, "Exclusão MODERADOR", id,  motivo.Motivo);
 
                 resultado = _moderadorService.Delete(id);
 

@@ -118,10 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnSair.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABsUlEQVRIS72VPUsDQRCGo9gKilgogmAj6J+wExTttbARLcUgfkLAQsQvVLRS0N5WsFMktf4Dk5i7
+        i/ix3O7lImgX3z3fEEMw5pKNDwx3M7s7uzs7Oxv5VyzXHXA8b8ZW6thR6gbfN8vzZtlcH5aUY5ZSr7aU
+        F/hfTUs5mnHdHjbXD1Z8iNUvUTUPwnGPSYaomiWfz7cgNB9CiFaa/gRhXHGkPLGF6Kbpd3CQfdhBkmpV
+        YEw7xhxAFGQBi2xmUzl2NjuM8FxTDcWT7/djglstz7lcJ82l4HCn0eGcamgY4l34SOpo0FwEDVHdgWrN
+        IM3n4CtVthMYY2hcp1oXtudtYBdX2FUTTUFGbCNMi1T1SqbQabkWQSTWsOB3ZNgk3QUT7PycQJcLdNiq
+        ReB8D/KJiSbozniINuHvsiREMJg65Hn4SmR8v4Omb5imZ1RDE6SpUvuQh5RSvTQXMXDR4rq8l628AE5f
+        l4oE1ap4VKoNYwqlIlqxVPAmhip2cBpD9p2mheiiqTIYcNewcq2B84Y/OOOQF4QqeDJxaUaMPpkaPPqD
+        +hYjn490VmBCc49+Y4hEvgCZOssL4ZQT4QAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnConfig.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALKSURBVEhLzZW7
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALKSURBVEhLzZW7
         axRRFMY3iUTwjSj4AhXFQkEbhfwJ2oriq4qNf4BG8YFWFj4LX4kgFgpaRuxjp3aaKKIQdLMP181M5t7Z
         TaPV+vtmD+NuJkZjUPzgMPd897zm3jNncv8FGo1GR8G5y0XvA8Qj9941Gt22PXeUnDtciOMX+SBYFYbh
         YhIMIsdte3bIe7+s5P35onNXClG0LQiCRehDBOw1k1wpinajj4yF4WrZFOP4NvotfDeYyfRQcI7iAw79

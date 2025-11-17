@@ -17,6 +17,8 @@ namespace Apresentação
 
         private frmInicial parentForm;
 
+        int idModerador = (int)UsuarioLogado.Id;
+
         public frmUsuario(frmInicial parent)
         {
             InitializeComponent();
@@ -37,23 +39,17 @@ namespace Apresentação
         private void ConfiguraDataGridView()
         {
             // Configuração do DataGridView em um método separado
-            dgUsuario.ColumnCount = 5;
+            dgUsuario.ColumnCount = 3;
             dgUsuario.AutoGenerateColumns = false;
-            dgUsuario.Columns[0].Width = 55;
+            dgUsuario.Columns[0].Width = 60;
             dgUsuario.Columns[0].HeaderText = "ID";
-            dgUsuario.Columns[0].DataPropertyName = "idUsuario";
-            dgUsuario.Columns[1].Width = 300;
+            dgUsuario.Columns[0].DataPropertyName = "id_usuario";
+            dgUsuario.Columns[1].Width = 400;
             dgUsuario.Columns[1].HeaderText = "NOME";
             dgUsuario.Columns[1].DataPropertyName = "nome";
-            dgUsuario.Columns[2].Width = 55;
-            dgUsuario.Columns[2].HeaderText = "FAIXA ETÁRIA";
-            dgUsuario.Columns[2].DataPropertyName = "faixaEtaria";
-            dgUsuario.Columns[3].Width = 310;
-            dgUsuario.Columns[3].HeaderText = "EMAIL";
-            dgUsuario.Columns[3].DataPropertyName = "email";
-            dgUsuario.Columns[4].Width = 150;
-            dgUsuario.Columns[4].HeaderText = "SENHA";
-            dgUsuario.Columns[4].DataPropertyName = "senha";
+            dgUsuario.Columns[2].Width = 445;
+            dgUsuario.Columns[2].HeaderText = "EMAIL";
+            dgUsuario.Columns[2].DataPropertyName = "email";
 
             dgUsuario.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgUsuario.AllowUserToAddRows = false;
@@ -111,8 +107,7 @@ namespace Apresentação
             // Limpando e preenchendo os TextBoxes com os valores da linha selecionada
             txtId.Text = Convert.ToString(dgUsuario.CurrentRow.Cells[0].Value);
             txtNome.Text = Convert.ToString(dgUsuario.CurrentRow.Cells[1].Value);
-            txtIdade.Text = Convert.ToString(dgUsuario.CurrentRow.Cells[2].Value);
-            txtEmail.Text = Convert.ToString(dgUsuario.CurrentRow.Cells[3].Value);
+            txtEmail.Text = Convert.ToString(dgUsuario.CurrentRow.Cells[2].Value);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -178,9 +173,6 @@ namespace Apresentação
             usuario.idade = idade;
             usuario.email = email;
 
-            //Logs
-            int idModerador = (int)UsuarioLogado.Id;
-
             //Validator
             if (usuario != null)
             {
@@ -208,7 +200,7 @@ namespace Apresentação
                 frmModerador moderador = new frmModerador();
                 moderador.EnviarEmail(email, "Sua Conta no HelpMentalHealth foi atualizada", body);
 
-                _logsService.CriarLog(null, idModerador, "Atualização USUÁRIO", "Id: " + id + "\n Motivo(s): " + motivo.Motivo);
+                _logsService.CriarLog(null, idModerador, "Atualização USUÁRIO", id , motivo.Motivo);
 
                 msg = "USUÁRIO atualizado com sucesso!";
                     carregaGridView();
@@ -228,19 +220,11 @@ namespace Apresentação
             string resultado;
             string msg;
 
-            //Logs
-            int idModerador = (int)UsuarioLogado.Id;
-
             DialogResult resposta;
             resposta = MessageBox.Show("Confirma exclusão?", "Aviso do sistema!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
             if (resposta == DialogResult.OK)
             {
-
-                int.TryParse(txtId.Text, out int id);
-
-                resultado = _usuarioService.Delete(id);
-
                 //Motivo
                 frmMotivo motivo = new frmMotivo();
                 motivo.ShowDialog();
@@ -249,7 +233,11 @@ namespace Apresentação
                 frmModerador moderador = new frmModerador();
                 moderador.EnviarEmail(txtEmail.Text, "Sua Conta no HelpMentalHealth foi excluída", body);
 
-                _logsService.CriarLog(null, idModerador, "Exclusão USUÁRIO", "Id: " + id + "\n Motivo(s): " + motivo.Motivo);
+                int.TryParse(txtId.Text, out int id);
+
+                _logsService.CriarLog(null, idModerador, "Exclusão USUÁRIO", id, motivo.Motivo);
+
+                resultado = _usuarioService.Delete(id);
 
                 if (resultado == "SUCESSO")
                 {
@@ -292,6 +280,8 @@ namespace Apresentação
 
                 frmModerador moderador = new frmModerador();
                 moderador.EnviarEmail(txtEmail.Text, "Sua Conta no HelpMentalHealth foi inativada", body);
+
+                _logsService.CriarLog(null, idModerador, "Inativação USUÁRIO", id, motivo.Motivo);
 
 
                 if (resultado == "SUCESSO")

@@ -17,13 +17,14 @@ namespace Negocio
             _repository = new LogsRepository();
             }
 
-        public string CriarLog(int? id, int idModerador, string acao, string comentario)
+        public string CriarLog(int? id, int idModerador, string acao, int? idAlterado, string comentario)
         {
             var log = new Logs
             {
                 id = id,
                 idModerador = idModerador,
                 acao = acao,
+                idAlterado = idAlterado,
                 comentario = comentario
             };
 

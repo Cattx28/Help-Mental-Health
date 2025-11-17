@@ -18,11 +18,12 @@ namespace Dados
 
                 Conexao.getConnection();
 
-                string insertSql = "INSERT INTO Moderador " +
+                string insertSql = "INSERT INTO moderador " +
                                     "(nome, email, senha) " +
                                     "VALUES (@pNome, @pEmail, @pSenha)";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(insertSql, Conexao.SqlCon);
+
 
                 SqlCmd.Parameters.AddWithValue("@pNome", moderador.nome);
                 SqlCmd.Parameters.AddWithValue("@pEmail", moderador.email);
@@ -31,16 +32,20 @@ namespace Dados
                 resp = SqlCmd.ExecuteNonQuery() == 1 ? "SUCESSO" : "FALHA";
 
             }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Erro MySQL ({ex.Number}): {ex.Message}");
+
+            }
             catch (Exception ex)
             {
-                resp = ex.Message;
+                resp = "Erro geral: " + ex.Message;
             }
             finally
             {
                 Conexao.closeConnection();
 
             }
-
             return resp;
         }
 
@@ -51,7 +56,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string updateSql = "UPDATE Moderador SET " +
+                string updateSql = "UPDATE moderador SET " +
                                     "nome = @pNome, email = @pEmail " +
                                     "WHERE idModerador = @pId ";
 
@@ -81,7 +86,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string updateSql = "UPDATE Moderador SET " +
+                string updateSql = "UPDATE moderador SET " +
                                     "senha = @pSenha " +
                                     "WHERE idModerador = @pId ";
 
@@ -111,7 +116,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string deleteSql = "DELETE FROM Moderador " +
+                string deleteSql = "DELETE FROM moderador " +
                                     "WHERE idModerador = @pId ";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(deleteSql, Conexao.SqlCon);
@@ -143,7 +148,7 @@ namespace Dados
             throw new InvalidOperationException("A conexão com o banco de dados não está aberta.");
         }
 
-                String selectSql = "SELECT * from Moderador";
+                String selectSql = "SELECT * from moderador";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
 
@@ -168,7 +173,7 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * from Moderador " +
+                String selectSql = "SELECT * from moderador " +
                                     "WHERE adm = 0";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -193,7 +198,7 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * from Moderador " +
+                String selectSql = "SELECT * from moderador " +
                                     "WHERE adm = 1";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -220,7 +225,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string inativeSql = "UPDATE Moderador SET " +
+                string inativeSql = "UPDATE moderador SET " +
                                     "adm = 1 " +
                                     "WHERE idModerador = @pId";
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(inativeSql, Conexao.SqlCon);
@@ -255,12 +260,12 @@ namespace Dados
 
                 if (pId != null)
                 {
-                    selectSql = "SELECT * FROM Moderador " +
+                    selectSql = "SELECT * FROM moderador " +
                                 "WHERE idModerador = @pId";
                 }
                 else
                 {
-                    selectSql = "SELECT * FROM Moderador";
+                    selectSql = "SELECT * FROM moderador";
                 }
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -300,7 +305,7 @@ namespace Dados
 
                 {
                     // Busca apenas o hash armazenado
-                    string sql = "SELECT senha FROM Moderador WHERE nome = @pLogin OR email = @pLogin";
+                    string sql = "SELECT senha FROM moderador WHERE nome = @pLogin OR email = @pLogin";
 
                     string senhaHash = null;
 
@@ -319,7 +324,7 @@ namespace Dados
                     if (senhaHash != null && PasswordHasher.VerifyPassword(senha, senhaHash))
                     {
                         // Se a senha estiver correta, busque os dados do usuário
-                        string usuarioSql = "SELECT idModerador, nome, email FROM Moderador WHERE nome = @pLogin OR email = @pLogin";
+                        string usuarioSql = "SELECT idModerador, nome, email FROM moderador WHERE nome = @pLogin OR email = @pLogin";
                         cmd = new MySqlCommand(usuarioSql, Conexao.SqlCon);
                         cmd.Parameters.AddWithValue("@pLogin", login);
                         // Executa o comando para buscar os dados do usuário

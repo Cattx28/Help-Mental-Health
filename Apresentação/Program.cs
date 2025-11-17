@@ -56,13 +56,13 @@ namespace SeuNamespace
                     {
                         if (login.DialogResult == DialogResult.OK)
                         {
-                            // Login bem-sucedido - mostrar formulário principal
+                            /*// Login bem-sucedido - mostrar formulário principal
                             var mainForm = new frmInicial();
 
                             // Configurar para encerrar aplicação quando o mainForm fechar
                             mainForm.FormClosed += (s, e) => Application.Exit();
 
-                            mainForm.Show();
+                            mainForm.Show();*/
                         }
                         else
                         {

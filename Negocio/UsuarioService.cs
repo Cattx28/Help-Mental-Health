@@ -52,8 +52,7 @@ namespace Negocio
         }
         public string Delete(int idUsuario)
         {
-            // Insira as validações e regras de negócio aqui
-            // Por exemplo, verificar se o email já está cadastrado
+           
 
             return _repository.Delete(idUsuario);
 

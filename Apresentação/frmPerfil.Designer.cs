@@ -37,6 +37,8 @@
             label7 = new Label();
             label8 = new Label();
             grpSenha = new GroupBox();
+            imgOlho2 = new PictureBox();
+            imgOlho1 = new PictureBox();
             txtConfirma = new TextBox();
             label1 = new Label();
             txtSenha = new TextBox();
@@ -50,6 +52,8 @@
             btnVoltarSenha = new Button();
             grpDados.SuspendLayout();
             grpSenha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)imgOlho2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgOlho1).BeginInit();
             SuspendLayout();
             // 
             // grpDados
@@ -74,6 +78,7 @@
             txtId.Name = "txtId";
             txtId.Size = new Size(125, 27);
             txtId.TabIndex = 26;
+            txtId.Visible = false;
             // 
             // txtEmail
             // 
@@ -135,6 +140,8 @@
             // grpSenha
             // 
             grpSenha.BackColor = Color.FromArgb(208, 226, 241);
+            grpSenha.Controls.Add(imgOlho2);
+            grpSenha.Controls.Add(imgOlho1);
             grpSenha.Controls.Add(txtConfirma);
             grpSenha.Controls.Add(label1);
             grpSenha.Controls.Add(txtSenha);
@@ -146,6 +153,28 @@
             grpSenha.Size = new Size(1024, 221);
             grpSenha.TabIndex = 29;
             grpSenha.TabStop = false;
+            // 
+            // imgOlho2
+            // 
+            imgOlho2.Image = Properties.Resources.olho;
+            imgOlho2.Location = new Point(968, 176);
+            imgOlho2.Name = "imgOlho2";
+            imgOlho2.Size = new Size(30, 26);
+            imgOlho2.SizeMode = PictureBoxSizeMode.Zoom;
+            imgOlho2.TabIndex = 28;
+            imgOlho2.TabStop = false;
+            imgOlho2.Click += imgOlho2_Click;
+            // 
+            // imgOlho1
+            // 
+            imgOlho1.Image = Properties.Resources.olho;
+            imgOlho1.Location = new Point(968, 97);
+            imgOlho1.Name = "imgOlho1";
+            imgOlho1.Size = new Size(30, 26);
+            imgOlho1.SizeMode = PictureBoxSizeMode.Zoom;
+            imgOlho1.TabIndex = 27;
+            imgOlho1.TabStop = false;
+            imgOlho1.Click += imgOlho1_Click;
             // 
             // txtConfirma
             // 
@@ -313,6 +342,8 @@
             grpDados.PerformLayout();
             grpSenha.ResumeLayout(false);
             grpSenha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)imgOlho2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgOlho1).EndInit();
             ResumeLayout(false);
         }
 
@@ -337,5 +368,7 @@
         private Button btnSalvarSenha;
         private Button btnVoltarDados;
         private Button btnVoltarSenha;
+        private PictureBox imgOlho1;
+        private PictureBox imgOlho2;
     }
 }

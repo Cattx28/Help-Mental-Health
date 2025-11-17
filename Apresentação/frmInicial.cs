@@ -161,5 +161,14 @@ namespace Apresentação
                 Posicao(filhoPerfil);
             }
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+            var login = new frmLogin();
+            login.Show();
+
+        }
     }
 }

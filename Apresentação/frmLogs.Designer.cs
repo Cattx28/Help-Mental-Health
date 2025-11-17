@@ -82,6 +82,7 @@ namespace Apresentação
             dgLogs.RowHeadersWidth = 51;
             dgLogs.Size = new Size(1066, 776);
             dgLogs.TabIndex = 0;
+            dgLogs.CellContentClick += dgLogs_CellContentClick;
             // 
             // frmLogs
             // 

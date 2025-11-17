@@ -69,9 +69,9 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * FROM Denuncia_Mensagem " + 
-                                   "JOIN Mensagem " + 
-                                   "ON Denuncia_Mensagem.mensagem = Mensagem.idMensagem";
+                String selectSql = "SELECT idConversaDefinitiva, usuario, psicologo, denuncia_do_usuario " +
+                                    "FROM ConversaDefinitiva " +
+                                    "WHERE denuncia_do_usuario IS NOT NULL";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
 
@@ -94,9 +94,9 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * FROM Denuncia_Resposta " + 
-                                   "JOIN Resposta " +
-                                   "ON Denuncia_Resposta.resposta = Resposta.idResposta";
+                String selectSql = "SELECT idConversaDefinitiva, usuario, psicologo, denuncia_do_psicologo " +
+                                    "FROM ConversaDefinitiva " +
+                                    "WHERE denuncia_do_psicologo IS NOT NULL";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
 

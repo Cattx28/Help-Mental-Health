@@ -18,7 +18,7 @@ namespace Dados
 
                 Conexao.getConnection();
 
-                string insertSql = "INSERT INTO Psicologo " +
+                string insertSql = "INSERT INTO psicologo " +
                                     "(nome, cpf, regiao, email, senha) " +
                                     "VALUES (@pNome, @pCpf, @pEstado, @pEmail)";
 
@@ -51,7 +51,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string updateSql = "UPDATE Psicologo SET " +
+                string updateSql = "UPDATE psicologo SET " +
                                     "nome = @pNome, cpf = @pCpf, estado = @pEstado, email = @pEmail " +
                                     "WHERE idPsicologo = @pId";
 
@@ -84,7 +84,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string deleteSql = "DELETE FROM Psicologo " +
+                string deleteSql = "DELETE FROM psicologo " +
                                     "WHERE idPsicologo = @pId ";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(deleteSql, Conexao.SqlCon);
@@ -112,7 +112,7 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string inativeSql = "UPDATE Psicologo SET " +
+                string inativeSql = "UPDATE psicologo SET " +
                                     "ativo = 0 " +
                                     "WHERE idPsicologo = @pId";
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(inativeSql, Conexao.SqlCon);
@@ -138,7 +138,7 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * from Psicologo " +
+                String selectSql = "SELECT * from psicologo " +
                                     "WHERE ativo = 1";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -163,7 +163,7 @@ namespace Dados
             try
             {
                 Conexao.getConnection();
-                String selectSql = "SELECT * from Psicologo " +
+                String selectSql = "SELECT * from psicologo " +
                                     "WHERE ativo = 0";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
@@ -191,12 +191,12 @@ namespace Dados
                 Conexao.getConnection();
                 if (pId != null)
                 {
-                    selectSql = "SELECT * FROM Psicologo " +
+                    selectSql = "SELECT * FROM psicologo " +
                                 "WHERE idPsicologo = @pId";
                 }
                 else
                 {
-                    selectSql = "SELECT * FROM Psicologo";
+                    selectSql = "SELECT * FROM psicologo";
                 }
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);

@@ -11,6 +11,7 @@ namespace Dados
 
         public static void getConnection()
         {
+
             try
             {
                 if (SqlCon.State == System.Data.ConnectionState.Closed)

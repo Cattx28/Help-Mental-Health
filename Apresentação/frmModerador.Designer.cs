@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle21 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle22 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle23 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle24 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmModerador));
             dgModerador = new DataGridView();
             grpDados = new GroupBox();
@@ -56,44 +56,44 @@
             // 
             // dgModerador
             // 
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(180, 202, 232);
-            dataGridViewCellStyle1.ForeColor = Color.FromArgb(19, 62, 112);
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(104, 160, 205);
-            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(19, 62, 112);
-            dgModerador.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.BackColor = Color.FromArgb(180, 202, 232);
+            dataGridViewCellStyle21.ForeColor = Color.FromArgb(19, 62, 112);
+            dataGridViewCellStyle21.SelectionBackColor = Color.FromArgb(104, 160, 205);
+            dataGridViewCellStyle21.SelectionForeColor = Color.FromArgb(19, 62, 112);
+            dgModerador.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             dgModerador.BackgroundColor = Color.FromArgb(208, 226, 241);
             dgModerador.BorderStyle = BorderStyle.None;
             dgModerador.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(38, 68, 102);
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(226, 239, 239);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(30, 99, 159);
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(226, 239, 239);
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            dgModerador.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = Color.FromArgb(38, 68, 102);
+            dataGridViewCellStyle22.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle22.ForeColor = Color.FromArgb(226, 239, 239);
+            dataGridViewCellStyle22.SelectionBackColor = Color.FromArgb(30, 99, 159);
+            dataGridViewCellStyle22.SelectionForeColor = Color.FromArgb(226, 239, 239);
+            dataGridViewCellStyle22.WrapMode = DataGridViewTriState.True;
+            dgModerador.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             dgModerador.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = Color.FromArgb(108, 138, 182);
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = Color.FromArgb(226, 239, 239);
-            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(64, 118, 166);
-            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(226, 239, 239);
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            dgModerador.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = Color.FromArgb(108, 138, 182);
+            dataGridViewCellStyle23.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle23.ForeColor = Color.FromArgb(226, 239, 239);
+            dataGridViewCellStyle23.SelectionBackColor = Color.FromArgb(64, 118, 166);
+            dataGridViewCellStyle23.SelectionForeColor = Color.FromArgb(226, 239, 239);
+            dataGridViewCellStyle23.WrapMode = DataGridViewTriState.False;
+            dgModerador.DefaultCellStyle = dataGridViewCellStyle23;
             dgModerador.EnableHeadersVisualStyles = false;
             dgModerador.GridColor = Color.FromArgb(208, 226, 241);
             dgModerador.Location = new Point(33, 207);
             dgModerador.Name = "dgModerador";
             dgModerador.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle4.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dgModerador.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle24.BackColor = SystemColors.Highlight;
+            dataGridViewCellStyle24.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle24.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle24.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle24.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle24.WrapMode = DataGridViewTriState.True;
+            dgModerador.RowHeadersDefaultCellStyle = dataGridViewCellStyle24;
             dgModerador.RowHeadersVisible = false;
             dgModerador.RowHeadersWidth = 51;
             dgModerador.Size = new Size(1035, 525);
@@ -112,9 +112,9 @@
             grpDados.Controls.Add(txtId);
             grpDados.Controls.Add(label1);
             grpDados.FlatStyle = FlatStyle.System;
-            grpDados.Location = new Point(31, 27);
+            grpDados.Location = new Point(30, 30);
             grpDados.Name = "grpDados";
-            grpDados.Size = new Size(922, 159);
+            grpDados.Size = new Size(958, 155);
             grpDados.TabIndex = 1;
             grpDados.TabStop = false;
             // 
@@ -125,9 +125,9 @@
             txtSenha.Cursor = Cursors.IBeam;
             txtSenha.Font = new Font("Segoe UI Semilight", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtSenha.ForeColor = Color.FromArgb(38, 68, 102);
-            txtSenha.Location = new Point(644, 113);
+            txtSenha.Location = new Point(642, 113);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(252, 30);
+            txtSenha.Size = new Size(254, 30);
             txtSenha.TabIndex = 10;
             txtSenha.UseSystemPasswordChar = true;
             // 
@@ -136,7 +136,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 11F);
             label5.ForeColor = Color.FromArgb(38, 68, 102);
-            label5.Location = new Point(571, 114);
+            label5.Location = new Point(571, 113);
             label5.Name = "label5";
             label5.Size = new Size(75, 25);
             label5.TabIndex = 27;
@@ -149,7 +149,7 @@
             txtEmail.Cursor = Cursors.IBeam;
             txtEmail.Font = new Font("Segoe UI Semilight", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtEmail.ForeColor = Color.FromArgb(38, 68, 102);
-            txtEmail.Location = new Point(71, 112);
+            txtEmail.Location = new Point(71, 113);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(494, 30);
             txtEmail.TabIndex = 9;
@@ -172,7 +172,7 @@
             txtNome.Cursor = Cursors.IBeam;
             txtNome.Font = new Font("Segoe UI Semilight", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtNome.ForeColor = Color.FromArgb(38, 68, 102);
-            txtNome.Location = new Point(71, 66);
+            txtNome.Location = new Point(71, 67);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(825, 30);
             txtNome.TabIndex = 8;
@@ -196,7 +196,7 @@
             txtId.Enabled = false;
             txtId.Font = new Font("Segoe UI Semibold", 12.7000008F, FontStyle.Bold);
             txtId.ForeColor = Color.FromArgb(38, 68, 102);
-            txtId.Location = new Point(35, 11);
+            txtId.Location = new Point(35, 10);
             txtId.Name = "txtId";
             txtId.ReadOnly = true;
             txtId.Size = new Size(44, 29);
@@ -207,7 +207,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F);
             label1.ForeColor = Color.FromArgb(38, 68, 102);
-            label1.Location = new Point(2, 11);
+            label1.Location = new Point(2, 10);
             label1.Name = "label1";
             label1.Size = new Size(40, 28);
             label1.TabIndex = 19;

@@ -121,31 +121,31 @@
   <data name="btnBuscar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         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
-        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
+        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
+        o3KNoaq83QAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnVoltar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEOSURBVHhe7dk7
-        TsNAFIVhF7AAXjsBCRp2QYWo2VSyATZBCUUQYgmxo1DFM+OkHw7mWhrRGyPf/5NuYU9hnzNOosgVAAAA
-        AADAWLZdd17HeGmHvnzu9xd1CB+atNntru20D/3O/4TPNs+2NH/Fzvfh1yG8b7ruzJbnjfCEJzzhCe8B
-        4QnvMPwq5+O6bV+H8Jq3JqVTW54/7fZDEf6wjvFRczfl6E/Wjd3e+BR6WRTwL6YJ4club3y64OL3DUw9
-        f1pA07b3xcX9fQRyzkd1jC9FCb6+BL+p9RMFXw0luPoZHFCCUIJQglCCUIJQglCCUIJQgrh+NTYonoSD
-        5tZO+9I/CSld2SEAAAAAAMBEquoLXyURYnMkUd0AAAAASUVORK5CYII=
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEMSURBVHhe7dk7
+        TsQwFIXhKWABvHYCEjTsggpRsynYAJughGIQYgm+iYYqudeZ6Y2IiWTdPjMo/j/JTWwpPievIqsVAAAA
+        AADATDbDcC5ml/54Fb632wtR/RLV2HbdtZ9ftPHK5/Dpb7z6NYtVXPkxfFD9bIfhzK9bJMITnvCEJ3wN
+        CE/4CsOvUzqWvn+fwovqRxPjqV+3WEH1oQi/C2aPwezukKPtuhu/z9mI6nNRwL8YjeqL3+dsRPXJb+DQ
+        Y68FNH1/X5y8vkcgpXQkZm9FCXW9BH8FsxNRXU8lVPUZnFACJWSUQAkZJVBCRgmUkFFC7b/GJsWdsBPV
+        Wz9fhfFOiPHKHwcAAAAAANi3H18lEWJU7hgIAAAAAElFTkSuQmCC
 </value>
   </data>
   <metadata name="mySqlCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

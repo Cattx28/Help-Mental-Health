@@ -30,6 +30,28 @@ namespace Apresentação
 
             Habilita();
         }
+        private bool ImagensIguais(Image img1, Image img2)
+        {
+            // Verifica se as imagens são nulas
+            if (img1 == null || img2 == null)
+                return false;
+            // Verifica se as dimensões das imagens são diferentes
+            if (img1.Width != img2.Width || img1.Height != img2.Height)
+                return false;
+            // Cria bitmap para comparação
+            Bitmap bmp1 = new Bitmap(img1);
+            Bitmap bmp2 = new Bitmap(img2);
+            // Compara pixel a pixel
+            for (int x = 0; x < bmp1.Width; x++)
+            {
+                for (int y = 0; y < bmp1.Height; y++)
+                {
+                    if (bmp1.GetPixel(x, y) != bmp2.GetPixel(x, y))
+                        return false;
+                }
+            }
+            return true; // As imagens são iguais
+        }
 
         private void Habilita()
         {
@@ -201,6 +223,34 @@ namespace Apresentação
         private void btnSalvarDados_Click(object sender, EventArgs e)
         {
             Salvar();
+        }
+
+        private void imgOlho1_Click(object sender, EventArgs e)
+        {
+            if (ImagensIguais(imgOlho1.Image, Properties.Resources.olho))
+            {
+                imgOlho1.Image = Properties.Resources.estrabismo;
+                txtSenha.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                imgOlho1.Image = Properties.Resources.olho;
+                txtSenha.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void imgOlho2_Click(object sender, EventArgs e)
+        {
+            if (ImagensIguais(imgOlho2.Image, Properties.Resources.olho))
+            {
+                imgOlho2.Image = Properties.Resources.estrabismo;
+                txtConfirma.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                imgOlho2.Image = Properties.Resources.olho;
+                txtConfirma.UseSystemPasswordChar = true;
+            }
         }
     }
 }

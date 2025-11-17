@@ -19,6 +19,8 @@ namespace Apresentação
 
         private frmInicial parentForm;
 
+        int idModerador = (int)UsuarioLogado.Id;
+
         public frmPsicologo(frmInicial parent)
         {
             InitializeComponent();
@@ -37,19 +39,19 @@ namespace Apresentação
             // Configuração do DataGridView em um método separado
             dgPsicologo.ColumnCount = 5;
             dgPsicologo.AutoGenerateColumns = false;
-            dgPsicologo.Columns[0].Width = 45;
+            dgPsicologo.Columns[0].Width = 60;
             dgPsicologo.Columns[0].HeaderText = "ID";
-            dgPsicologo.Columns[0].DataPropertyName = "idPsicologo";
-            dgPsicologo.Columns[1].Width = 200;
+            dgPsicologo.Columns[0].DataPropertyName = "id_psicologo";
+            dgPsicologo.Columns[1].Width = 240;
             dgPsicologo.Columns[1].HeaderText = "NOME";
             dgPsicologo.Columns[1].DataPropertyName = "nome";
-            dgPsicologo.Columns[2].Width = 100;
+            dgPsicologo.Columns[2].Width = 220;
             dgPsicologo.Columns[2].HeaderText = "CPF";
             dgPsicologo.Columns[2].DataPropertyName = "cpf";
-            dgPsicologo.Columns[3].Width = 65;
+            dgPsicologo.Columns[3].Width = 85;
             dgPsicologo.Columns[3].HeaderText = "ESTADO";
             dgPsicologo.Columns[3].DataPropertyName = "estado";
-            dgPsicologo.Columns[4].Width = 200;
+            dgPsicologo.Columns[4].Width = 300;
             dgPsicologo.Columns[4].HeaderText = "EMAIL";
             dgPsicologo.Columns[4].DataPropertyName = "email";
 
@@ -175,9 +177,7 @@ namespace Apresentação
             psicologo.regiao = regiao;
             psicologo.email = email;
 
-            //Log
-            int idModerador = (int)UsuarioLogado.Id;
-
+           
             //Validator
             if (psicologo != null)
             {
@@ -206,7 +206,7 @@ namespace Apresentação
                 frmModerador moderador = new frmModerador();
                 moderador.EnviarEmail(email, "Sua Conta no HelpMentalHealth foi atualizada", body);
 
-                _logsService.CriarLog(null, idModerador, "Atualização PSICÓLOGO", "Id: " + id + "\n Motivo(s): " + motivo.Motivo);
+                _logsService.CriarLog(null, idModerador, "Atualização PSICÓLOGO", id, motivo.Motivo);
 
                 msg = "PSICOLOGO atualizado com sucesso!";
                 carregaGridView();
@@ -226,8 +226,6 @@ namespace Apresentação
             string resultado;
             string msg;
 
-            int idModerador = (int)UsuarioLogado.Id;
-
             DialogResult resposta;
             resposta = MessageBox.Show("Confirma exclusão?", "Aviso do sistema!", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (resposta == DialogResult.OK)
@@ -242,7 +240,7 @@ namespace Apresentação
 
                 int.TryParse(txtId.Text, out int id);
 
-                _logsService.CriarLog(null, idModerador, "Exclusão PSICÓLOGO", "Id: " + id + "\n Motivo(s): " + motivo.Motivo);
+                _logsService.CriarLog(null, idModerador, "Exclusão PSICÓLOGO", id, motivo.Motivo);
 
                 resultado = _psicologoService.Delete(id);
 
@@ -283,8 +281,9 @@ namespace Apresentação
                 frmModerador moderador = new frmModerador();
                 moderador.EnviarEmail(txtEmail.Text, "Sua Conta no HelpMentalHealth foi inativada", body);
 
-
                 int.TryParse(txtId.Text, out int id);
+
+                _logsService.CriarLog(null, idModerador, "Inativação PSICÓLOGO", id, motivo.Motivo);
 
                 resultado = _psicologoService.Inative(id);
 

@@ -17,20 +17,26 @@ namespace Dados
             {
                 Conexao.getConnection();
 
-                string insertSql = "INSERT INTO Logs (moderador, acao, comentario) " +
-                         "VALUES (@pModerador, @pAcao, @pComentario)";
+                string insertSql = "INSERT INTO logs (moderador, acao, usuarioAlterado, comentario) " +
+                         "VALUES (@pModerador, @pAcao, @pIdAlterado, @pComentario)";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(insertSql, Conexao.SqlCon);
 
                 SqlCmd.Parameters.AddWithValue("@pModerador", log.idModerador);
                 SqlCmd.Parameters.AddWithValue("@pAcao", log.acao);
+                SqlCmd.Parameters.AddWithValue("@pIdAlterado", log.idAlterado);
                 SqlCmd.Parameters.AddWithValue("@pComentario", log.comentario);
 
                 resp = SqlCmd.ExecuteNonQuery() == 1 ? "SUCESSO" : "FALHA";
             }
+            catch (MySql.Data.MySqlClient.MySqlException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Erro MySQL ({ex.Number}): {ex.Message}");
+
+            }
             catch (Exception ex)
             {
-                resp = ex.Message;
+                resp = "Erro geral: " + ex.Message;
             }
             finally
             {
@@ -51,7 +57,7 @@ namespace Dados
                     throw new InvalidOperationException("A conexão com o banco de dados não está aberta.");
                 }
 
-                String selectSql = "SELECT * from Logs ORDER BY idLogs DESC";
+                String selectSql = "SELECT * from logs ORDER BY idLog DESC";
 
                 MySql.Data.MySqlClient.MySqlCommand SqlCmd = new MySql.Data.MySqlClient.MySqlCommand(selectSql, Conexao.SqlCon);
 

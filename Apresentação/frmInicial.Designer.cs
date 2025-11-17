@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicial));
             panel1 = new Panel();
+            btnSair = new Button();
             btnConfig = new Button();
             btnLogs = new Button();
             btnDashboard = new Button();
@@ -50,6 +51,7 @@
             // 
             panel1.BackColor = Color.FromArgb(19, 62, 112);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(btnSair);
             panel1.Controls.Add(btnConfig);
             panel1.Controls.Add(btnLogs);
             panel1.Controls.Add(btnDashboard);
@@ -61,6 +63,22 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(230, 1114);
             panel1.TabIndex = 0;
+            // 
+            // btnSair
+            // 
+            btnSair.BackColor = Color.Maroon;
+            btnSair.FlatStyle = FlatStyle.Popup;
+            btnSair.Font = new Font("Segoe UI Semilight", 11F);
+            btnSair.ForeColor = Color.FromArgb(226, 239, 239);
+            btnSair.Image = (Image)resources.GetObject("btnSair.Image");
+            btnSair.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSair.Location = new Point(-2, 852);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new Size(233, 40);
+            btnSair.TabIndex = 8;
+            btnSair.Text = "Sair";
+            btnSair.UseVisualStyleBackColor = false;
+            btnSair.Click += btnSair_Click;
             // 
             // btnConfig
             // 
@@ -229,7 +247,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(208, 227, 241);
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(1500, 900);
+            ClientSize = new Size(1500, 881);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Segoe UI Light", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -261,5 +279,6 @@
         private Button btnLogs;
         private Button btnFechar;
         private Button btnConfig;
+        private Button btnSair;
     }
 }
